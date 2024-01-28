@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/screens/bottom_nav_bar.dart';
-import 'package:test_app/screens/logged_out_screen.dart';
+import 'package:test_app/auth/logged_out_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(PhotoApp());
 }
 

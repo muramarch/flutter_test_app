@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Form for users image card
 class MediaQueryImages extends StatelessWidget {
   final String image;
   final String name;

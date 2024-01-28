@@ -29,8 +29,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
         decoration: BoxDecoration(
           border: Border(
             top: BorderSide(
-              color: Colors.grey, // Цвет верхней линии
-              width: 1.0, // Ширина верхней линии
+              color: Colors.grey,
+              width: 1.0,
             ),
           ),
         ),

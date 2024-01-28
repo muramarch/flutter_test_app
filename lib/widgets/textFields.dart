@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 
-class LoginTextField extends StatelessWidget {
+// TextField for email
+class LoginTextField extends StatefulWidget {
   final String innerText;
-  const LoginTextField({required this.innerText});
+  final TextEditingController controller;
+  const LoginTextField({required this.innerText, required this.controller});
 
+  @override
+  State<LoginTextField> createState() => _LoginTextFieldState();
+}
+
+class _LoginTextFieldState extends State<LoginTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget.controller,
       decoration: InputDecoration(
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(width: 2),
@@ -16,16 +24,18 @@ class LoginTextField extends StatelessWidget {
           borderSide: BorderSide(width: 2),
           borderRadius: BorderRadius.circular(0.0),
         ),
-        hintText: innerText,
+        hintText: widget.innerText,
       ),
     );
   }
 }
 
+// TextField for password
 class PasswordTextField extends StatefulWidget {
   final String innerText;
+  final TextEditingController controller;
 
-  const PasswordTextField({required this.innerText});
+  const PasswordTextField({required this.innerText, required this.controller});
 
   @override
   State<PasswordTextField> createState() => _PasswordTextFieldState();
@@ -37,6 +47,7 @@ class _PasswordTextFieldState extends State<PasswordTextField> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: widget.controller,
       obscureText: _isObscured,
       decoration: InputDecoration(
         suffixIcon: IconButton(

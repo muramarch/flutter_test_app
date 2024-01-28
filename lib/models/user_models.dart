@@ -18,15 +18,27 @@ class User {
   });
 }
 
-final user1 = User(
+final rodjab = User(
   name: 'Rodjab',
   lastname: 'Nasri',
   login: 'rodsri',
-  avatarUrl: 'assets/images/users/user1.png',
+  avatarUrl: 'assets/images/users/rodjab.png',
   location: 'Delly, India',
   photos: [
-    Photo(url: 'assets/images/photos/dis1.jpg', category: 'love'),
-    Photo(url: 'assets/images/photos/dis2.jpg', category: 'winter'),
+    Photo(url: 'assets/images/photos/dis1d.jpg', category: 'love'),
+    Photo(url: 'assets/images/photos/dis2d.jpg', category: 'winter'),
+  ],
+);
+
+final john = User(
+  name: 'John',
+  lastname: 'Johnson',
+  login: 'jjohnson',
+  avatarUrl: 'assets/images/users/john.png',
+  location: 'London, UK',
+  photos: [
+    Photo(url: 'assets/images/photos/dis3d.jpg', category: 'love'),
+    Photo(url: 'assets/images/photos/dis4d.jpg', category: 'winter'),
   ],
 );
 
@@ -36,5 +48,20 @@ final jane = User(
   login: 'niceboobs',
   avatarUrl: 'assets/images/users/jane.png',
   location: 'San Francisco, CA',
-  photos: [],
+  photos: [
+    Photo(url: 'assets/images/photos/dis5d.jpg', category: 'love'),
+    Photo(url: 'assets/images/photos/dis6d.jpg', category: 'winter'),
+  ],
+);
+
+final sindy = User(
+  name: 'Sindy',
+  lastname: 'Ochkoff',
+  login: 'vodkalover',
+  avatarUrl: 'assets/images/users/jane.png',
+  location: 'Moscow, RUS',
+  photos: [
+    Photo(url: 'assets/images/photos/dis7d.jpg', category: 'love'),
+    Photo(url: 'assets/images/photos/dis8d.jpg', category: 'winter'),
+  ],
 );

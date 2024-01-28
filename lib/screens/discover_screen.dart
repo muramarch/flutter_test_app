@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/models/photo_models.dart';
+import 'package:test_app/models/user_models.dart';
 import 'package:test_app/widgets/buttons.dart';
 
 import 'package:test_app/widgets/media_query_images.dart';
@@ -33,23 +35,23 @@ class DiscoverScreen extends StatelessWidget {
                   children: [
                     MediaQueryImages(
                       image: 'assets/images/Rectangle2.8.jpg',
-                      name: 'Radjab Nasri',
-                      login: '@radsri',
+                      name: rodjab.name,
+                      login: rodjab.login,
                     ),
                     MediaQueryImages(
                       image: 'assets/images/Rectangle2.9.jpg',
-                      name: 'Stephen Tompson',
-                      login: '@karate',
+                      name: jane.name,
+                      login: jane.login,
                     ),
                     MediaQueryImages(
                       image: 'assets/images/Rectangle2.10.jpg',
-                      name: 'Sam Johnson',
-                      login: '@bluesinger',
+                      name: john.name,
+                      login: john.login,
                     ),
                     MediaQueryImages(
                       image: 'assets/images/Rectangle2.11.jpg',
-                      name: 'Nicola Tesla',
-                      login: 'flash',
+                      name: sindy.name,
+                      login: sindy.login,
                     ),
                   ],
                 ),
@@ -68,53 +70,33 @@ class DiscoverScreen extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.45,
                     child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/images/photos/dis10.jpg',
+                      children: List.generate(
+                        5,
+                        (index) => Column(
+                          children: [
+                            Image.asset(
+                              'assets/images/photos/dis${2 * index + 1}d.jpg',
+                            ),
+                            SizedBox(height: 15),
+                          ],
                         ),
-                        SizedBox(height: 15),
-                        Image.asset(
-                          'assets/images/photos/dis2.jpg',
-                        ),
-                        SizedBox(height: 15),
-                        Image.asset(
-                          'assets/images/photos/dis4.jpg',
-                        ),
-                        SizedBox(height: 15),
-                        Image.asset(
-                          'assets/images/photos/dis6.jpg',
-                        ),
-                        SizedBox(height: 15),
-                        Image.asset(
-                          'assets/images/photos/dis8.jpg',
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                   Container(
                     width: MediaQuery.of(context).size.width * 0.45,
                     child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/images/photos/dis1.jpg',
+                      children: List.generate(
+                        5,
+                        (index) => Column(
+                          children: [
+                            Image.asset(
+                              'assets/images/photos/dis${2 * index + 2}d.jpg',
+                            ),
+                            SizedBox(height: 15),
+                          ],
                         ),
-                        SizedBox(height: 15),
-                        Image.asset(
-                          'assets/images/photos/dis3.jpg',
-                        ),
-                        SizedBox(height: 15),
-                        Image.asset(
-                          'assets/images/photos/dis5.jpg',
-                        ),
-                        SizedBox(height: 15),
-                        Image.asset(
-                          'assets/images/photos/dis7.jpg',
-                        ),
-                        SizedBox(height: 15),
-                        Image.asset(
-                          'assets/images/photos/dis9.jpg',
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ],

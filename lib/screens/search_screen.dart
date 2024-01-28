@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/widgets/textFields.dart';
 
-class SearchScreen extends StatelessWidget {
+class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
+
+  @override
+  State<SearchScreen> createState() => _SearchScreenState();
+}
+
+class _SearchScreenState extends State<SearchScreen> {
+  final _searchController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +29,10 @@ class SearchScreen extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            LoginTextField(innerText: 'Search all photos'),
+            LoginTextField(
+              innerText: 'Search all photos',
+              controller: _searchController,
+            ),
           ],
         ),
       ),

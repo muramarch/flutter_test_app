@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "739623956387",
+    "project_id": "photo-d121b",
+    "storage_bucket": "photo-d121b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739623956387:android:1fddf55161d379ad2af416",
+        "android_client_info": {
+          "package_name": "com.example.photo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-199cDFZADdvLm404LOIUTZUE37eYh68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739623956387:android:c3fc7fc3d2f0ac5e2af416",
+        "android_client_info": {
+          "package_name": "com.example.test_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-199cDFZADdvLm404LOIUTZUE37eYh68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
